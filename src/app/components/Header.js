@@ -6,6 +6,7 @@ import Image from 'next/image';
 
 export default function Header() {
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+    const [isScrolled, setIsScrolled] = useState(false);
     const dropdownRef = useRef(null);
 
     // Close dropdown when clicking outside
@@ -19,6 +20,22 @@ export default function Header() {
         document.addEventListener('mousedown', handleClickOutside);
         return () => {
             document.removeEventListener('mousedown', handleClickOutside);
+        };
+    }, []);
+
+    // Add scroll event listener to change header background
+    useEffect(() => {
+        function handleScroll() {
+            if (window.scrollY > 50) {
+                setIsScrolled(true);
+            } else {
+                setIsScrolled(false);
+            }
+        }
+
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
         };
     }, []);
 
@@ -37,167 +54,82 @@ export default function Header() {
 
     return (
         <div className="">
-            <header id="header">
-                <div id="topbar">
-                    <div className="container">
-                        <div className="social-links">
-                            <a href="#" className="twitter" style={{ textDecoration: 'none' }}><i className="fa fa-twitter"></i></a>
-                            <a href="#" className="facebook" style={{ textDecoration: 'none' }}><i className="fa fa-facebook"></i></a>
-                            <a href="#" className="linkedin" style={{ textDecoration: 'none' }}><i className="fa fa-linkedin"></i></a>
-                            <a href="#" className="instagram" style={{ textDecoration: 'none' }}><i className="fa fa-instagram"></i></a>
-                        </div>
-                    </div>
-                </div>
-
+            <header id="header" className={isScrolled ? 'scrolled' : ''}>
                 <div className="container">
-                    <div className="logo float-left">
-                        <h1 className="text-light">
+                    <div className="header-content">
+                       <div className="logo-section">
                             <Link 
-                                href="#intro" 
+                                href="#header" 
                                 className="scrollto"
-                                onClick={(e) => handleSmoothScroll(e, '#intro')}
-                                style={{ textDecoration: 'none' }}
+                                onClick={(e) => handleSmoothScroll(e, '#header')}
+                                style={{ textDecoration: 'none', display: 'flex', alignItems: 'center' }}
                             >
-                                <span>AccessTech</span>
+                                <h1 className="logo-text">
+                                    <span style={{ color: '#413e66' }}>UICSOFT</span>
+                                </h1>
+                                <img src="/logo.png" alt="AccessTech Logo" className="img-fluid logo-img"/>
                             </Link>
-                        </h1>
-                        <Link 
-                            href="#header" 
-                            className="scrollto"
-                            onClick={(e) => handleSmoothScroll(e, '#header')}
-                            style={{ textDecoration: 'none' }}
-                        >
-                            <img src="/logo.png" alt="AccessTech Logo" className="img-fluid"/>
-                        </Link>
-                    </div>
+                        </div>
 
-                    <nav className="main-nav float-right d-none d-lg-block">
-                        <ul style={{ listStyle: 'none', margin: 0, padding: 0 }}>
-                            <li className="active">
-                                <Link 
-                                    href="#intro" 
-                                    onClick={(e) => handleSmoothScroll(e, '#intro')}
-                                    style={{ textDecoration: 'none' }}
-                                >
-                                    Home
-                                </Link>
-                            </li>
-                            <li>
-                                <Link 
-                                    href="#about" 
-                                    onClick={(e) => handleSmoothScroll(e, '#about')}
-                                    style={{ textDecoration: 'none' }}
-                                >
-                                    About Us
-                                </Link>
-                            </li>
-                            <li>
-                                <Link 
-                                    href="#services" 
-                                    onClick={(e) => handleSmoothScroll(e, '#services')}
-                                    style={{ textDecoration: 'none' }}
-                                >
-                                    Our Solutions
-                                </Link>
-                            </li>
-                            <li>
-                                <Link 
-                                    href="#portfolio" 
-                                    onClick={(e) => handleSmoothScroll(e, '#portfolio')}
-                                    style={{ textDecoration: 'none' }}
-                                >
-                                    Success Stories
-                                </Link>
-                            </li>
-                            <li>
-                                <Link 
-                                    href="#team" 
-                                    onClick={(e) => handleSmoothScroll(e, '#team')}
-                                    style={{ textDecoration: 'none' }}
-                                >
-                                    Our Team
-                                </Link>
-                            </li>
-                            {/*<li className="drop-down" ref={dropdownRef}>
-                                <button 
-                                    className="dropdown-toggle"
-                                    onClick={toggleDropdown}
-                                    style={{
-                                        background: 'none',
-                                        border: 'none',
-                                        color: 'inherit',
-                                        cursor: 'pointer',
-                                        fontSize: 'inherit',
-                                        fontFamily: 'inherit',
-                                        textDecoration: 'none'
-                                    }}
-                                >
-                                    More ▼
-                                </button>
-                                <ul className={`dropdown-menu ${isDropdownOpen ? 'show' : ''}`} 
-                                    style={{
-                                        display: isDropdownOpen ? 'block' : 'none',
-                                        position: 'absolute',
-                                        backgroundColor: 'white',
-                                        boxShadow: '0 2px 10px rgba(0,0,0,0.1)',
-                                        borderRadius: '4px',
-                                        padding: '10px 0',
-                                        minWidth: '200px',
-                                        zIndex: 1000
-                                    }}>
-                                    <li>
-                                        <Link 
-                                            href="#pricing" 
-                                            className="dropdown-item"
-                                            onClick={(e) => handleSmoothScroll(e, '#pricing')}
-                                            style={{ display: 'block', padding: '8px 20px', color: '#333', textDecoration: 'none' }}
-                                        >
-                                            Service Packages
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link 
-                                            href="#testimonials" 
-                                            className="dropdown-item"
-                                            onClick={(e) => handleSmoothScroll(e, '#testimonials')}
-                                            style={{ display: 'block', padding: '8px 20px', color: '#333', textDecoration: 'none' }}
-                                        >
-                                            Testimonials
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link 
-                                            href="#clients" 
-                                            className="dropdown-item"
-                                            onClick={(e) => handleSmoothScroll(e, '#clients')}
-                                            style={{ display: 'block', padding: '8px 20px', color: '#333', textDecoration: 'none' }}
-                                        >
-                                            Partners
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link 
-                                            href="#faq" 
-                                            className="dropdown-item"
-                                            onClick={(e) => handleSmoothScroll(e, '#faq')}
-                                            style={{ display: 'block', padding: '8px 20px', color: '#333', textDecoration: 'none' }}
-                                        >
-                                            FAQ
-                                        </Link>
-                                    </li>
-                                </ul>
-                            </li>*/}
-                            <li>
-                                <Link 
-                                    href="#footers" 
-                                    onClick={(e) => handleSmoothScroll(e, '#footers')}
-                                    style={{ textDecoration: 'none' }}
-                                >
-                                    Contact Us
-                                </Link>
-                            </li>
-                        </ul>
-                    </nav>
+                        <nav className="main-nav">
+                            <ul style={{ listStyle: 'none', margin: 0, padding: 0, display: 'flex', alignItems: 'center' }}>
+                                <li className="active">
+                                    <Link 
+                                        href="#intro" 
+                                        onClick={(e) => handleSmoothScroll(e, '#intro')}
+                                        style={{ textDecoration: 'none' }}
+                                    >
+                                        Home
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link 
+                                        href="#about" 
+                                        onClick={(e) => handleSmoothScroll(e, '#about')}
+                                        style={{ textDecoration: 'none' }}
+                                    >
+                                        About Us
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link 
+                                        href="#services" 
+                                        onClick={(e) => handleSmoothScroll(e, '#services')}
+                                        style={{ textDecoration: 'none' }}
+                                    >
+                                        Our Solutions
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link 
+                                        href="#portfolio" 
+                                        onClick={(e) => handleSmoothScroll(e, '#portfolio')}
+                                        style={{ textDecoration: 'none' }}
+                                    >
+                                        Success Stories
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link 
+                                        href="#team" 
+                                        onClick={(e) => handleSmoothScroll(e, '#team')}
+                                        style={{ textDecoration: 'none' }}
+                                    >
+                                        Our Team
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link 
+                                        href="#footers" 
+                                        onClick={(e) => handleSmoothScroll(e, '#footers')}
+                                        style={{ textDecoration: 'none' }}
+                                    >
+                                        Contact Us
+                                    </Link>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
                 </div>
             </header>
             
@@ -228,23 +160,114 @@ export default function Header() {
             <main id="main"/>
 
             <style jsx>{`
-                .main-nav ul li {
-                    display: inline-block;
-                    margin-left: 20px;
-                    position: relative;
+                #header {
+                    transition: all 0.3s ease;
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    z-index: 1000;
+                    background: transparent;
+                    padding: 15px 0;
                 }
-                
-                .main-nav ul li a, .main-nav ul li button {
-                    text-decoration: none;
-                    color: inherit;
+
+                #header.scrolled {
+                    background: white;
+                    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+                    padding: 10px 0;
+                }
+
+                .header-content {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+
+                .logo-section {
+                    display: flex;
+                    align-items: center;
+                }
+
+                .logo-img {
+                    height: 50px;
+                    margin-right: 15px;
+                }
+
+                .logo-text {
+                    margin: 0;
+                    font-size: 2.27rem;
+                    font-weight: thin;
+                    color: #413e66 !important;
+                }
+
+                /* UICSOFT text styles - visible in both states */
+                .logo-text span {
+                    color: white;
                     transition: color 0.3s ease;
                 }
-                
-                .main-nav ul li a:hover, .main-nav ul li button:hover {
-                    color: #007bff;
-                    text-decoration: none;
+
+                #header.scrolled .logo-text span {
+                    color: #333 !important;
                 }
-                
+
+                .main-nav ul {
+                    display: flex;
+                    align-items: center;
+                    gap: 25px;
+                }
+
+                .main-nav ul li {
+                    margin: 0;
+                }
+
+                /* Navigation link styles */
+                .main-nav ul li a {
+                    text-decoration: none;
+                    color: white;
+                    font-weight: 500;
+                    transition: color 0.3s ease;
+                    padding: 8px 0;
+                    position: relative;
+                }
+
+                .main-nav ul li a:hover {
+                    color: #007bff;
+                }
+
+                /* When scrolled - change nav link colors */
+                #header.scrolled .main-nav ul li a {
+                    color: #333;
+                }
+
+                #header.scrolled .main-nav ul li a:hover {
+                    color: #007bff;
+                }
+
+                .main-nav ul li a::after {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 0;
+                    height: 2px;
+                    background: #007bff;
+                    transition: width 0.3s ease;
+                }
+
+                .main-nav ul li a:hover::after {
+                    width: 100%;
+                }
+
+                @media (max-width: 991px) {
+                    .main-nav {
+                        display: none;
+                    }
+
+                    .header-content {
+                        justify-content: center;
+                    }
+                }
+
                 .dropdown-menu {
                     transition: all 0.3s ease;
                 }
@@ -260,6 +283,11 @@ export default function Header() {
                 
                 .btn-get-started {
                     text-decoration: none !important;
+                }
+
+                /* Remove the topbar completely */
+                #topbar {
+                    display: none;
                 }
             `}</style>
         </div>
