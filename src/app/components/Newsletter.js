@@ -45,7 +45,6 @@ export default class Newsletter extends Component {
             <a class="cta-btn align-middle" href="#">Call To Action</a>
           </div>
         </div>
-
       </div>
     </section>
                  </main>

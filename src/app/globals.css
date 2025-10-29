@@ -721,6 +721,7 @@ h6 {
   margin: 10px;
   border: 3px solid #fff;
   color: #fff;
+  text-decoration: none;
 }
 
 #call-to-action .cta-btn:hover {

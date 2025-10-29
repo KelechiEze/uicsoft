@@ -26,7 +26,7 @@ export default function Page() {
       <Divider />
       <About />
       <Portfolio />
-      <Testimonial />
+      {/*<Testimonial />*/}
       <Team />
       <Clients />
       <Pricing />
