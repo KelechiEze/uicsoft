@@ -137,7 +137,9 @@ export default function Header() {
                 <div className="container d-flex h-100">
                     <div className="row justify-content-center align-self-center">
                         <div className="col-md-6 intro-info order-md-first order-last">
-                            <h2>Empowering Mobility<br/>Through <span>Innovative Technology</span></h2>
+                            <h2>Unified Innovation<br/>&<span> Communication Software</span></h2>
+                            <p>Empowering Mobility
+Through Innovative Technology</p>
                             <div>
                                 <Link 
                                     href="#about" 
