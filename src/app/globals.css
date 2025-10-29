@@ -621,10 +621,13 @@ h6 {
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 18px;
+  text-decoration: none;
 }
+
 
 #services .title a {
   color: #111;
+  text-decoration: none;
 }
 
 #services .box:hover .title a {
@@ -1301,6 +1304,7 @@ h6 {
 
 #footer .footer-top .footer-links ul a {
   color: #696592;
+  text-decoration: none;
 }
 
 #footer .footer-top .footer-links ul a:hover {
