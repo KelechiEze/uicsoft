@@ -1,4 +1,4 @@
-'use client'; // Add this at the top
+'use client';
 
 import React, { Component } from 'react'
 
@@ -17,11 +17,12 @@ export default class Divider extends Component {
             <img src="/features-1.svg" class="img-fluid" alt=""/>
           </div>
           <div class="col-lg-6 wow fadeInUp pt-5 pt-lg-0">
-            <h4>  <h2 class="wow bounce">We provide <strong>solutions</strong></h2>
+            <h4>  <h2 class="wow bounce">We provide <strong>innovative solutions</strong></h2>
 </h4>
-            Improve yourself  and learn responsive  web design fundamentals.
-<p>• Stay up to date – Get updated files when framework minor updates are made to help you stay current.</p> 
-<p>• Connect – Ask questions and get to know other web designers.</p>
+            Transforming prosthetic and assistive technology through cutting-edge innovation.
+<p>• Accelerated Access – Reduce waiting times from years to weeks with our rapid digital fabrication processes.</p> 
+<p>• Continuous Improvement – Receive ongoing updates and enhancements to your assistive devices as technology advances.</p>
+<p>• Community Support – Connect with others and share experiences in our supportive user community.</p>
 
           </div>
         </div>
@@ -32,10 +33,11 @@ export default class Divider extends Component {
           </div>
 
           <div class="col-lg-6 wow fadeInUp pt-4 pt-lg-0 order-2 order-lg-1">
-            <h4 class="wow fadeIn" data-wow-delay="0.6s"><mark>Creative</mark> Designers &amp;
-                                       <mark>  Talented</mark> Developers</h4>
-            <p> • Stand out – Improve  by being proficient in the most popular front-end CSS framework.</p> 
-<p>• Be more efficient – Learn what’s new and how it can help you earn more in less time by boosting your productivity.</p> 
+            <h4 class="wow fadeIn" data-wow-delay="0.6s"><mark>Compassionate</mark> Innovators &amp;
+                                       <mark>Expert</mark> Technologists</h4>
+            <p>• Personalized Care – Every solution is tailored to individual needs, abilities, and lifestyle requirements.</p> 
+<p>• Enhanced Mobility – Restore independence and confidence through customized prosthetic and adaptive technologies.</p> 
+<p>• Ongoing Partnership – We work closely with you throughout your journey, providing continuous support and device optimization.</p>
 
           </div>
           

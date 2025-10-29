@@ -41,10 +41,10 @@ export default function Header() {
                 <div id="topbar">
                     <div className="container">
                         <div className="social-links">
-                            <a href="#" className="twitter"><i className="fa fa-twitter"></i></a>
-                            <a href="#" className="facebook"><i className="fa fa-facebook"></i></a>
-                            <a href="#" className="linkedin"><i className="fa fa-linkedin"></i></a>
-                            <a href="#" className="instagram"><i className="fa fa-instagram"></i></a>
+                            <a href="#" className="twitter" style={{ textDecoration: 'none' }}><i className="fa fa-twitter"></i></a>
+                            <a href="#" className="facebook" style={{ textDecoration: 'none' }}><i className="fa fa-facebook"></i></a>
+                            <a href="#" className="linkedin" style={{ textDecoration: 'none' }}><i className="fa fa-linkedin"></i></a>
+                            <a href="#" className="instagram" style={{ textDecoration: 'none' }}><i className="fa fa-instagram"></i></a>
                         </div>
                     </div>
                 </div>
@@ -54,18 +54,20 @@ export default function Header() {
                         <h1 className="text-light">
                             <Link 
                                 href="#intro" 
-                                className="scrollto no-underline"
+                                className="scrollto"
                                 onClick={(e) => handleSmoothScroll(e, '#intro')}
+                                style={{ textDecoration: 'none' }}
                             >
-                                <span>UicSoft</span>
+                                <span>AccessTech</span>
                             </Link>
                         </h1>
                         <Link 
                             href="#header" 
-                            className="scrollto no-underline"
+                            className="scrollto"
                             onClick={(e) => handleSmoothScroll(e, '#header')}
+                            style={{ textDecoration: 'none' }}
                         >
-                            <img src="/logo.png" alt="UicSoft Logo" className="img-fluid"/>
+                            <img src="/logo.png" alt="AccessTech Logo" className="img-fluid"/>
                         </Link>
                     </div>
 
@@ -74,8 +76,8 @@ export default function Header() {
                             <li className="active">
                                 <Link 
                                     href="#intro" 
-                                    className="no-underline"
                                     onClick={(e) => handleSmoothScroll(e, '#intro')}
+                                    style={{ textDecoration: 'none' }}
                                 >
                                     Home
                                 </Link>
@@ -83,8 +85,8 @@ export default function Header() {
                             <li>
                                 <Link 
                                     href="#about" 
-                                    className="no-underline"
                                     onClick={(e) => handleSmoothScroll(e, '#about')}
+                                    style={{ textDecoration: 'none' }}
                                 >
                                     About Us
                                 </Link>
@@ -92,33 +94,33 @@ export default function Header() {
                             <li>
                                 <Link 
                                     href="#services" 
-                                    className="no-underline"
                                     onClick={(e) => handleSmoothScroll(e, '#services')}
+                                    style={{ textDecoration: 'none' }}
                                 >
-                                    Services
+                                    Our Solutions
                                 </Link>
                             </li>
                             <li>
                                 <Link 
                                     href="#portfolio" 
-                                    className="no-underline"
                                     onClick={(e) => handleSmoothScroll(e, '#portfolio')}
+                                    style={{ textDecoration: 'none' }}
                                 >
-                                    Portfolio
+                                    Success Stories
                                 </Link>
                             </li>
                             <li>
                                 <Link 
                                     href="#team" 
-                                    className="no-underline"
                                     onClick={(e) => handleSmoothScroll(e, '#team')}
+                                    style={{ textDecoration: 'none' }}
                                 >
-                                    Team
+                                    Our Team
                                 </Link>
                             </li>
-                            <li className="drop-down" ref={dropdownRef}>
+                            {/*<li className="drop-down" ref={dropdownRef}>
                                 <button 
-                                    className="dropdown-toggle no-underline"
+                                    className="dropdown-toggle"
                                     onClick={toggleDropdown}
                                     style={{
                                         background: 'none',
@@ -126,10 +128,11 @@ export default function Header() {
                                         color: 'inherit',
                                         cursor: 'pointer',
                                         fontSize: 'inherit',
-                                        fontFamily: 'inherit'
+                                        fontFamily: 'inherit',
+                                        textDecoration: 'none'
                                     }}
                                 >
-                                    Join ▼
+                                    More ▼
                                 </button>
                                 <ul className={`dropdown-menu ${isDropdownOpen ? 'show' : ''}`} 
                                     style={{
@@ -145,50 +148,50 @@ export default function Header() {
                                     <li>
                                         <Link 
                                             href="#pricing" 
-                                            className="no-underline dropdown-item"
+                                            className="dropdown-item"
                                             onClick={(e) => handleSmoothScroll(e, '#pricing')}
                                             style={{ display: 'block', padding: '8px 20px', color: '#333', textDecoration: 'none' }}
                                         >
-                                            Pricing
+                                            Service Packages
                                         </Link>
                                     </li>
                                     <li>
                                         <Link 
                                             href="#testimonials" 
-                                            className="no-underline dropdown-item"
+                                            className="dropdown-item"
                                             onClick={(e) => handleSmoothScroll(e, '#testimonials')}
                                             style={{ display: 'block', padding: '8px 20px', color: '#333', textDecoration: 'none' }}
                                         >
-                                            Testimonial
+                                            Testimonials
                                         </Link>
                                     </li>
                                     <li>
                                         <Link 
                                             href="#clients" 
-                                            className="no-underline dropdown-item"
+                                            className="dropdown-item"
                                             onClick={(e) => handleSmoothScroll(e, '#clients')}
                                             style={{ display: 'block', padding: '8px 20px', color: '#333', textDecoration: 'none' }}
                                         >
-                                            Clients
+                                            Partners
                                         </Link>
                                     </li>
                                     <li>
                                         <Link 
                                             href="#faq" 
-                                            className="no-underline dropdown-item"
+                                            className="dropdown-item"
                                             onClick={(e) => handleSmoothScroll(e, '#faq')}
                                             style={{ display: 'block', padding: '8px 20px', color: '#333', textDecoration: 'none' }}
                                         >
-                                            Frequently Asked Question
+                                            FAQ
                                         </Link>
                                     </li>
                                 </ul>
-                            </li>
+                            </li>*/}
                             <li>
                                 <Link 
                                     href="#footers" 
-                                    className="no-underline"
                                     onClick={(e) => handleSmoothScroll(e, '#footers')}
+                                    style={{ textDecoration: 'none' }}
                                 >
                                     Contact Us
                                 </Link>
@@ -202,12 +205,13 @@ export default function Header() {
                 <div className="container d-flex h-100">
                     <div className="row justify-content-center align-self-center">
                         <div className="col-md-6 intro-info order-md-first order-last">
-                            <h2>Unified Innovation<br/> and Communication <span>Software!</span></h2>
+                            <h2>Empowering Mobility<br/>Through <span>Innovative Technology</span></h2>
                             <div>
                                 <Link 
                                     href="#about" 
-                                    className="btn-get-started scrollto no-underline"
+                                    className="btn-get-started scrollto"
                                     onClick={(e) => handleSmoothScroll(e, '#about')}
+                                    style={{ textDecoration: 'none' }}
                                 >
                                     Get Started
                                 </Link>
@@ -224,14 +228,6 @@ export default function Header() {
             <main id="main"/>
 
             <style jsx>{`
-                .no-underline {
-                    text-decoration: none !important;
-                }
-                
-                .no-underline:hover {
-                    text-decoration: none !important;
-                }
-                
                 .main-nav ul li {
                     display: inline-block;
                     margin-left: 20px;

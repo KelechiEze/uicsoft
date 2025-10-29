@@ -30,7 +30,7 @@ export default function Page() {
       <Team />
       <Clients />
       <Pricing />
-      <Frequently />
+     {/*Frequently />*/}
       {/* <Contact /> */}
       {/* <Googlemaps /> */}
       <Footer />

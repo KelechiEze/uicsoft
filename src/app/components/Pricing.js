@@ -11,8 +11,8 @@ export default class Pricing extends Component {
 <div class="container">
 
   <header class="section-header">
-    <h3>Pricing</h3>
-    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+    <h3>Service Packages</h3>
+    <p>Transparent, affordable pricing for life-changing prosthetic and assistive technology solutions</p>
   </header>
 
   <div class="row flex-items-xs-middle flex-items-xs-center">
@@ -21,18 +21,20 @@ export default class Pricing extends Component {
     <div class="col-xs-12 col-lg-4">
       <div class="card">
         <div class="card-header">
-          <h3><span class="currency">$</span>19<span class="period">/month</span></h3>
+          <h3><span class="currency">$</span>500<span class="period">/device</span></h3>
         </div>
         <div class="card-block">
           <h4 class="card-title"> 
-            Basic Plan
+            Essential Mobility
           </h4>
           <ul class="list-group">
-            <li class="list-group-item">100GB Storage</li>
-            <li class="list-group-item">1,000GB Transfer</li>
-            <li class="list-group-item">24/7 Support System</li>
+            <li class="list-group-item">Basic custom prosthetic device</li>
+            <li class="list-group-item">3D scanning & digital fitting</li>
+            <li class="list-group-item">Durable standard materials</li>
+            <li class="list-group-item">2 fitting sessions</li>
+            <li class="list-group-item">6-month warranty</li>
           </ul>
-          <a href="#" class="btn">Choose Plan</a>
+          <a href="#" class="btn">Get Started</a>
         </div>
       </div>
     </div>
@@ -41,16 +43,18 @@ export default class Pricing extends Component {
     <div class="col-xs-12 col-lg-4">
       <div class="card">
         <div class="card-header">
-          <h3><span class="currency">$</span>29<span class="period">/month</span></h3>
+          <h3><span class="currency">$</span>800<span class="period">/device</span></h3>
         </div>
         <div class="card-block">
           <h4 class="card-title"> 
-            Regular Plan
+            Advanced Performance
           </h4>
           <ul class="list-group">
-            <li class="list-group-item">200GB Storage</li>
-            <li class="list-group-item">2,000GB Transfer</li>
-            <li class="list-group-item">24/7 Support System</li>
+            <li class="list-group-item">Enhanced mobility prosthetic</li>
+            <li class="list-group-item">Lightweight composite materials</li>
+            <li class="list-group-item">4 fitting & adjustment sessions</li>
+            <li class="list-group-item">Basic activity customization</li>
+            <li class="list-group-item">1-year comprehensive warranty</li>
           </ul>
           <a href="#" class="btn">Choose Plan</a>
         </div>
@@ -61,16 +65,18 @@ export default class Pricing extends Component {
     <div class="col-xs-12 col-lg-4">
       <div class="card">
         <div class="card-header">
-          <h3><span class="currency">$</span>39<span class="period">/month</span></h3>
+          <h3><span class="currency">$</span>1,500<span class="period">/device</span></h3>
         </div>
         <div class="card-block">
           <h4 class="card-title"> 
-            Premium Plan
+            Premium Custom
           </h4>
           <ul class="list-group">
-            <li class="list-group-item">300GB Storage</li>
-            <li class="list-group-item">3,000GB Transfer</li>
-            <li class="list-group-item">24/7 Support System</li>
+            <li class="list-group-item">High-performance prosthetic system</li>
+            <li class="list-group-item">Advanced sensor technology</li>
+            <li class="list-group-item">Unlimited fittings for 3 months</li>
+            <li class="list-group-item">Sports & specialized activity setup</li>
+            <li class="list-group-item">2-year warranty + priority support</li>
           </ul>
           <a href="#" class="btn">Choose Plan</a>
         </div>
@@ -78,68 +84,14 @@ export default class Pricing extends Component {
     </div>
 
   </div>
+
+  <div class="text-center mt-5">
+    <p class="text-muted">* Insurance coordination available • Payment plans offered • Pediatric and specialized solutions priced individually</p>
+    <p class="text-muted">All packages include initial consultation and basic training</p>
+  </div>
 </div>
 
 </section>
-
-{/* 
-                                    <div id="pricing" class="text-center">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-12 wow bounce">
-                                    <h2>Our Pricing</h2>
-                                </div>
-                                <div class="col-sm-6 col-md-3 wow fadeInLeft" data-wow-delay="0.6s">
-                                    <div class="plan plan_one">
-                                        <h4 class="plan_title">Basic</h4>
-                                        <ul>
-                                            <li>$220 per month</li>
-                                            <li>100GB Storage</li>
-                                            <li>1,000GB Transfer</li>
-                                            <li>24-hr support</li>
-                                        </ul>
-                                        <button class="btn btn-warning">SIGN UP</button>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 col-md-3 wow fadeInUp" data-wow-delay="0.9s">
-                                    <div class="plan plan_two">
-                                        <h4 class="plan_title">Standard</h4>
-                                        <ul>
-                                            <li>$420 per month</li>
-                                            <li>300GB Storage</li>
-                                            <li>3,000GB Transfer</li>
-                                            <li>12-hr response</li>
-                                        </ul>
-                                        <button class="btn btn-warning">SIGN UP</button>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 col-md-3 wow fadeInDown" data-wow-delay="1s">
-                                    <div class="plan plan_three">
-                                        <h4 class="plan_title">Professional</h4>
-                                        <ul>
-                                            <li>$860 per month</li>
-                                            <li>600GB Storage</li>
-                                            <li>6,000GB Transfer</li>
-                                            <li>1-hr response</li>
-                                        </ul>
-                                        <button class="btn btn-warning">SIGN UP</button>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 col-md-3 wow fadeInRight" data-wow-delay="1.3s">
-                                    <div class="plan plan_four">
-                                        <h4 class="plan_title">Advanced</h4>
-                                        <ul>
-                                            <li>$80 per month</li>
-                                            <li>1,000GB Storage</li>
-                                            <li>10TB Premium</li>
-                                            <li>15-min response</li>
-                                        </ul>
-                                        <button class="btn btn-warning">SIGN UP</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div> */}
             </div>
         )
     }

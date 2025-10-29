@@ -10,16 +10,16 @@ export default class Team extends Component {
                 <section id="team" className="section-bg">
                     <div className="container">
                         <div className="section-header">
-                            <h3>Team</h3>
-                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+                            <h3>Our Team</h3>
+                            <p>Meet the dedicated professionals using technology to create life-changing assistive devices and prosthetic solutions</p>
                         </div>
 
                         <div className="row">
                             <div className="col-lg-3 col-md-6 wow fadeInUp">
                                 <div className="member">
                                     <Image 
-                                        src="/team-1.jpg" 
-                                        alt="Walter White"
+                                        src="/ugwuw.webp" 
+                                        alt="Isaac Ugwu Chinenye"
                                         width={300}
                                         height={300}
                                         className="img-fluid"
@@ -27,8 +27,8 @@ export default class Team extends Component {
                                     />
                                     <div className="member-info">
                                         <div className="member-info-content">
-                                            <h4>Walter White</h4>
-                                            <span>Chief Executive Officer</span>
+                                            <h4>Isaac Ugwu Chinenye</h4>
+                                            <span>Lead Developer & Technical Architect</span>
                                             <div className="social">
                                                 <a href=""><i className="fa fa-twitter"></i></a>
                                                 <a href=""><i className="fa fa-facebook"></i></a>
@@ -43,16 +43,16 @@ export default class Team extends Component {
                             <div className="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                                 <div className="member">
                                     <Image 
-                                        src="/team-2.jpg" 
-                                        alt="Sarah Jhonson"
+                                        src="/lechi.jpg" 
+                                        alt="Eze Kelechi Joseph"
                                         width={300}
                                         height={300}
                                         className="img-fluid"
                                     />
                                     <div className="member-info">
                                         <div className="member-info-content">
-                                            <h4>Sarah Jhonson</h4>
-                                            <span>Product Manager</span>
+                                            <h4>Eze Kelechi Joseph</h4>
+                                            <span>FrontEnd Developer & Systems Engineer</span>
                                             <div className="social">
                                                 <a href=""><i className="fa fa-twitter"></i></a>
                                                 <a href=""><i className="fa fa-facebook"></i></a>
@@ -67,16 +67,16 @@ export default class Team extends Component {
                             <div className="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
                                 <div className="member">
                                     <Image 
-                                        src="/team-3.jpg" 
-                                        alt="William Anderson"
+                                        src="/anyanwu.webp" 
+                                        alt="Gift Anyanwu"
                                         width={300}
                                         height={300}
                                         className="img-fluid"
                                     />
                                     <div className="member-info">
                                         <div className="member-info-content">
-                                            <h4>William Anderson</h4>
-                                            <span>CTO</span>
+                                            <h4>Gift Anyanwu</h4>
+                                            <span>Patient Relations & Community Coordinator</span>
                                             <div className="social">
                                                 <a href=""><i className="fa fa-twitter"></i></a>
                                                 <a href=""><i className="fa fa-facebook"></i></a>
@@ -91,16 +91,16 @@ export default class Team extends Component {
                             <div className="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                                 <div className="member">
                                     <Image 
-                                        src="/team-4.jpg" 
-                                        alt="Amanda Jepson"
+                                        src="/lamide.webp" 
+                                        alt="Gbolamide"
                                         width={300}
                                         height={300}
                                         className="img-fluid"
                                     />
                                     <div className="member-info">
                                         <div className="member-info-content">
-                                            <h4>Amanda Jepson</h4>
-                                            <span>Accountant</span>
+                                            <h4>Christian Ikechukwu</h4>
+                                            <span>UI/UX Designer & Digital Artist</span>
                                             <div className="social">
                                                 <a href=""><i className="fa fa-twitter"></i></a>
                                                 <a href=""><i className="fa fa-facebook"></i></a>

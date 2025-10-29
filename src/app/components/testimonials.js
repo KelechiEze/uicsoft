@@ -20,37 +20,46 @@ export default class testimonials extends Component {
     
               <div class="testimonial-item">
                 <img src="/testimonial-1.jpg" class="testimonial-img" alt=""/>
-                <h3>Ugwu Isaac</h3>
-                <h4>Ceo &amp; Founder</h4>
+                <h3>Sarah Johnson</h3>
+                <h4>Prosthetic Recipient</h4>
                 <p>
-                  Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                  "After waiting two years for a traditional prosthetic, AccessTech created my custom limb in just three weeks. The 3D scanning made the fitting perfect, and I'm finally able to play with my kids again. This technology gave me my life back."
                 </p>
               </div>
     
               <div class="testimonial-item">
                 <img src="/testimonial-2.jpg" class="testimonial-img" alt=""/>
-                <h3>Grace</h3>
-                <h4>Designer</h4>
+                <h3>Michael Chen</h3>
+                <h4>Physical Therapist</h4>
                 <p>
-                  Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                  "I've worked with many prosthetic companies, but AccessTech's approach is revolutionary. Their rapid fabrication process and personalized designs have dramatically improved my patients' recovery times and overall quality of life."
                 </p>
               </div>
     
               <div class="testimonial-item">
                 <img src="/testimonial-3.jpg" class="testimonial-img" alt=""/>
-                <h3>Emmanuel</h3>
-                <h4>Developer</h4>
+                <h3>David Rodriguez</h3>
+                <h4>Accessibility Advocate</h4>
                 <p>
-                  Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+                  "As someone who's used prosthetic devices for 15 years, I've never experienced this level of customization and support. The ongoing maintenance and upgrade options ensure my device grows with my changing needs and activity levels."
                 </p>
               </div>
     
               <div class="testimonial-item">
                 <img src="/testimonial-4.jpg" class="testimonial-img" alt=""/>
-                <h3>Matt Brandons</h3>
-                <h4>Freelancer</h4>
+                <h3>Dr. Emily Watkins</h3>
+                <h4>Rehabilitation Specialist</h4>
                 <p>
-                  Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+                  "The adaptive technology solutions from AccessTech have transformed our pediatric clinic. Children who faced years of waiting now receive devices in weeks, allowing them to keep up with developmental milestones and peer activities."
+                </p>
+              </div>
+
+              <div class="testimonial-item">
+                <img src="/testimonial-5.jpg" class="testimonial-img" alt=""/>
+                <h3>James Wilson</h3>
+                <h4>Prosthetic User & Athlete</h4>
+                <p>
+                  "From daily activities to competitive sports, my AccessTech prosthetic adapts to everything I do. The lightweight design and personalized fit have eliminated the discomfort I experienced with previous devices. Truly life-changing technology."
                 </p>
               </div>
             </div>
