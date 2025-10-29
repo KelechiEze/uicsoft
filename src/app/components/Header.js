@@ -67,7 +67,7 @@ export default function Header() {
                                 <h1 className="logo-text">
                                     <span style={{ color: '#413e66' }}>UICSOFT</span>
                                 </h1>
-                                <img src="/logo.png" alt="AccessTech Logo" className="img-fluid logo-img"/>
+                                <img src="/newlogo.png" alt="AccessTech Logo" className="img-fluid logo-img"/>
                             </Link>
                         </div>
 

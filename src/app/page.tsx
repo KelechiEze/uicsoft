@@ -25,11 +25,11 @@ export default function Page() {
       <Newsletter />
       <Divider />
       <About />
-      <Portfolio />
+      {/*<Portfolio />*/}
       {/*<Testimonial />*/}
       <Team />
       <Clients />
-      <Pricing />
+      {/*<Pricing />*/}
      {/*Frequently />*/}
       {/* <Contact /> */}
       {/* <Googlemaps /> */}

@@ -40,14 +40,20 @@ export default class Team extends Component {
                                 </div>
                             </div>
 
-                           <div className="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                          <div className="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                                 <div className="member">
                                     <Image 
-                                        src="/laa.PNG" 
+                                        src="/lapos.jpg" 
                                         alt="Eze Kelechi Joseph"
-                                        width={300}
-                                        height={300}
+                                        width={768}
+                                        height={1005}
                                         className="img-fluid"
+                                        style={{ 
+                                            width: '100%', 
+                                            height: 'auto',
+                                            maxWidth: '300px', // Optional: to prevent it from being too large
+                                            objectFit: 'cover' // Ensures proper cropping if needed
+                                        }}
                                     />
                                     <div className="member-info">
                                         <div className="member-info-content">
@@ -117,4 +123,4 @@ export default class Team extends Component {
             </div>
         )
     }
-}
+} 
