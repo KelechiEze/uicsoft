@@ -57,19 +57,21 @@ export default function Header() {
             <header id="header" className={isScrolled ? 'scrolled' : ''}>
                 <div className="container">
                     <div className="header-content">
-                       <div className="logo-section">
-                            <Link 
-                                href="#header" 
-                                className="scrollto"
-                                onClick={(e) => handleSmoothScroll(e, '#header')}
-                                style={{ textDecoration: 'none', display: 'flex', alignItems: 'center' }}
-                            >
-                                <h1 className="logo-text">
-                                    <span style={{ color: '#413e66' }}>UICSOFT</span>
-                                </h1>
-                                <img src="/newlogo.png" alt="AccessTech Logo" className="img-fluid logo-img"/>
-                            </Link>
-                        </div>
+                      <div className="logo-section">
+    <Link 
+        href="#header" 
+        className="scrollto"
+        onClick={(e) => handleSmoothScroll(e, '#header')}
+        style={{ textDecoration: 'none', display: 'flex', alignItems: 'center' }}
+    >
+        <img 
+            src="/newlogo.png" 
+            alt="AccessTech Logo" 
+            className="img-fluid logo-img"
+            style={{ width: '170px', height: 'auto' }} // Adjust the width as needed
+        />
+    </Link>
+</div>
 
                         <nav className="main-nav">
                             <ul style={{ listStyle: 'none', margin: 0, padding: 0, display: 'flex', alignItems: 'center' }}>
@@ -102,15 +104,6 @@ export default function Header() {
                                 </li>
                                 <li>
                                     <Link 
-                                        href="#portfolio" 
-                                        onClick={(e) => handleSmoothScroll(e, '#portfolio')}
-                                        style={{ textDecoration: 'none' }}
-                                    >
-                                        Success Stories
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link 
                                         href="#team" 
                                         onClick={(e) => handleSmoothScroll(e, '#team')}
                                         style={{ textDecoration: 'none' }}
@@ -139,7 +132,7 @@ export default function Header() {
                         <div className="col-md-6 intro-info order-md-first order-last">
                             <h2>Unified Innovation<br/>&<span> Communication Software</span></h2>
                             <p>Empowering Mobility
-Through Innovative Technology</p>
+                             Through Innovative Technology</p>
                             <div>
                                 <Link 
                                     href="#about" 
